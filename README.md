@@ -17,6 +17,6 @@
 
  ## Results
 
- ![Heuristics comparisson](./Comparisson table BT.png)
+ ![Heuristics comparisson](./Comparisson_table_BT.png)
 
  
