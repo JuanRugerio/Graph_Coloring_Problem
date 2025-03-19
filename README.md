@@ -14,4 +14,9 @@
  ## Technologies used 
  -This project was developed in C language, since the Bachelor Thesis supervisor wanted us to understand the algorithms at the low programming level and wanted to leverage the efficency of C. 
 
+
+ ## Results
+
+ ![Heuristics comparisson](./Comparisson table BT.png)
+
  
