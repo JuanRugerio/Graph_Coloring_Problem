@@ -3,7 +3,7 @@
 ## Description
  SEQ, RLF and Simulated Annealing implementations in C to solve the Graph Coloring Problem. 
  
- The Graph Coloring Problem is all about assigning a color to each node in a graph, fulfilling the condition that no 2 nodes which have an edge between them have the same color and making use of as few colors as possible. It is an np hard problem, and therefore heuristic methods are applied to solve it. There are many applications for it like exam scheduling, air traffic management, or network frequency assignment. In this project, 3 following algorithms were implemented to solve the problem:
+ The Graph Coloring Problem is all about assigning a color to each node in a graph, fulfilling the condition that no 2 nodes which have an edge between them have the same color, and making use of as few colors as possible. It is an np hard problem, and therefore heuristic methods are applied to solve it. There are many applications for it like exam scheduling, air traffic management, or network frequency assignment. In this project, 3 following algorithms were implemented to solve the problem:
  
  SEQ: Acommodates node by node in classes. First, it checks (existing) class by class, whether it is possible to acommodate the node (when there is no adjacency to any node within the class), if it finds a suitable class the node is acommodated, if this is not the case, it creates a new class for the node to be. 
  
