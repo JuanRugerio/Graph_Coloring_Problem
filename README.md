@@ -19,4 +19,14 @@
 
  ![Heuristics comparisson](./Comparisson_table_BT.jpg)
 
+From Spanish translations:
+Instancias = Instances 
+Nodos = Nodes
+Aristas = Edges
+Tiempo (seg) = Time (seconds)
+Clases = Classes
+Mínimo = Minimum 
+Máximo = Maximum
+
+A clear better performance in terms of time is displayed by the more simple SEQ and RLF algorithms, though the SA displayed reasonable running times with its largest time for a run 479 seconds, or 8 minutes. On the other hand, a few exceptions appart, the SA algorithm outperforms its peer SEQ and RLF algorithms in number of resulting classes created.
  
