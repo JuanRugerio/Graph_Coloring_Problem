@@ -27,11 +27,12 @@ void Add2Adj(int, int, C1 **, C1 **);
 void Step1(void);
 void Step2(void);
 
-void main(void) {
+int main(void) {
 //Read file
 	FILE *fp;
 	LastClassPointer = NULL;
 	ClassesPointer = NULL;
+	OriginClassesPointer = NULL;
 		fopen_s(&fp, "DSJC125.1.txt", "r");
 		if (fp == NULL) {
 			printf("\nError:	archivo de datos inv%clido\n", 160);
@@ -43,11 +44,11 @@ void main(void) {
 	C1 *ConcreteNode;
 	NotInThisClass = (C1 *)malloc(sizeof(C1));
 	NotInThisClass->point = NULL;
-	NotInThisClass->node = NULL;
+	NotInThisClass->node = 0;
 	CNotInThisClass = NotInThisClass;
 	ActiveNodes = (C1 *)malloc(sizeof(C1));
 	CActiveNodes = ActiveNodes;
-	CActiveNodes->node = NULL;
+	CActiveNodes->node = 0;
 	for (int i = 1; i <= NNodes; i++) {
 		ConcreteNode = (C1 *)malloc(sizeof(C1));
 		ConcreteNode->node = i;
