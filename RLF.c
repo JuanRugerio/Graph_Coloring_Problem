@@ -38,7 +38,7 @@ void main(void) {
 			exit(8);
 		}
 	Read(fp);
-´
+
 //Makes a list linking all playing nodes, in the moment all are included
 	C1 *ConcreteNode;
 	NotInThisClass = (C1 *)malloc(sizeof(C1));
