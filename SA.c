@@ -42,7 +42,7 @@ void Best_Solution(void);
 void Intersection(void);
 
 
-void main(void) {
+int main(void) {
 	//Variable declaration
 	FILE *fp;
 	C1 *ptr1;
@@ -134,7 +134,7 @@ void main(void) {
 			else {
 				//If the solution is worse, it still is enabled to make the move with A certain probability
 				Probability = exp(-Delta / T); //Probability of move acceptance: more chances to change with larger temperature, less chances to move with greater Delta
-				Random = (double)rand() / (RAND_MAX + 1);
+				Random = (double)rand() / RAND_MAX;
 
 				if (Random<=Probability) {//If the probability passed the random number threshold, A change proceeds
 					Dislink(PickedClass2Move);
@@ -221,8 +221,8 @@ void DinamicStruc() {
 
 	AuxPointer2Class = (C2 *)malloc(sizeof(C2));
 	AuxPointer2Class0 = (C2 *)malloc(sizeof(C2));
-	AuxPointer2Class->class = NULL;
-	AuxPointer2Class->CountN = NULL;
+	AuxPointer2Class->class = 0;
+	AuxPointer2Class->CountN = 0;
 	AuxPointer2Class->point2node = NULL;
 	AuxPointer2Class->point2class = NULL;
 
@@ -232,8 +232,8 @@ void DinamicStruc() {
 		C2 *last;
 		last = (C2 *)malloc(sizeof(C2));
 
-		last->class = NULL;
-		last->CountN = NULL;
+		last->class = 0;
+		last->CountN = 0;
 		last->point2node = NULL;
 		last->point2class = NULL;
 
@@ -400,7 +400,7 @@ void Neighbor(void) {//Figures the selected node, randomly picks A class between
 	PickedClass2Move = 0;
 	Node2MoveVal = 0;
 	MovingNode = (C1 *)malloc(sizeof(C1));
-	MovingNode->node = NULL;
+	MovingNode->node = 0;
 	MovingNode->point2node = NULL;
 	PickedClass2Move = IRandomClass(Cmax);
 	Node2MoveVal = Node();
