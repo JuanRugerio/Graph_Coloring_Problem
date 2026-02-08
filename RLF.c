@@ -32,7 +32,7 @@ void main(void) {
 	FILE *fp;
 	LastClassPointer = NULL;
 	ClassesPointer = NULL;
-		fopen_s(&fp, "Heuristica1_5.txt", "r");
+		fopen_s(&fp, "DSJC125.1.txt", "r");
 		if (fp == NULL) {
 			printf("\nError:	archivo de datos inv%clido\n", 160);
 			exit(8);
