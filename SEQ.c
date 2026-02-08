@@ -37,7 +37,7 @@ void main(void) {
 	FILE *fp;
 	
     //Reads file
-	fopen_s(&fp, "Heuristica1_5.txt", "r");
+	fopen_s(&fp, "DSJC125.1.txt", "r");
 	if (fp == NULL) {
 		printf("\nError: archivo de datos inv%clido\n", 160);
 		exit(8);
